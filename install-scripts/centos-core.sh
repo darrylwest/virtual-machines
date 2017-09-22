@@ -8,7 +8,7 @@
 function runYum {
     echo "run the yum updates and installs..."
 
-    yum -y update && yum -y install wget uuid git vim-enhanced.x86_64
+    yum -y update && yum -y install wget uuid git vim-enhanced.x86_64 zip unzip
     yum groupinstall "Development Tools" -y
     yum install -y epel-release
     yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel clang jq

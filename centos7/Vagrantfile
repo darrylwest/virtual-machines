@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
 
   # custom share folders...
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "./workspace", "/opt/ebay/pods", type: "rsync", rsync__exclude: ".git/"
+  config.vm.synced_folder "./workspace", "/opt/workspace", type: "rsync", rsync__exclude: ".git/"
 
   # insure docker is loaded with all the default public images
   config.vm.provision "docker" do |d|
@@ -90,6 +90,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "install-scripts/install-golang.sh"
   config.vm.provision "shell", path: "install-scripts/install-jdk8.sh"
   # groovy, gradle, maven
-  config.vm.provision "shell", path: "workspace/post-install.sh"
+  config.vm.provision "shell", path: "workspace/bin/post-install.sh"
 
 end
