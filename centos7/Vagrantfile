@@ -89,6 +89,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "install-scripts/install-nodejs.sh"
   config.vm.provision "shell", path: "install-scripts/install-golang.sh"
   config.vm.provision "shell", path: "install-scripts/install-jdk8.sh"
+  config.vm.provision "shell", path: "install-scripts/install-groovy.sh"
+  config.vm.provision "shell", path: "install-scripts/install-gradle.sh"
   # groovy, gradle, maven
   config.vm.provision "shell", path: "workspace/bin/post-install.sh"
 

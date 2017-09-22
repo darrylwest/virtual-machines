@@ -7,10 +7,9 @@ VERS=2.4.12
 DIST="apache-groovy-binary-$VERS"
 ZIP="$DIST.zip"
 
-cd /opt
-wget https://bintray.com/artifact/download/groovy/maven/$ZIP
-
-unzip $ZIP
+cd /opt \
+    && wget https://bintray.com/artifact/download/groovy/maven/$ZIP \
+    && unzip $ZIP
 
 # remove the msdos files...
 cd groovy-$VERS/bin \
