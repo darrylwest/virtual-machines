@@ -10,6 +10,6 @@ ZIP=gradle-4.2-bin.zip
 cd /opt \
     && wget https://services.gradle.org/distributions/$ZIP \
     && unzip $ZIP \
-    && ln -s "/opt/$DIST/bin/gradle /usr/local/bin/gradle
+    && ln -s "/opt/$DIST/bin/gradle" /usr/local/bin/gradle
 
 exit 0
