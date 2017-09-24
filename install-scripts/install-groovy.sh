@@ -3,6 +3,8 @@
 # 2017.09.22
 #
 
+set -eu
+
 VERS=2.4.12
 DIST="apache-groovy-binary-$VERS"
 ZIP="$DIST.zip"

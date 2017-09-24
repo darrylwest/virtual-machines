@@ -3,6 +3,8 @@
 # 2017.03.06
 #
 
+set -eu
+
 function installGit {
     [ -d /downloads ] || mkdir /downloads
     cd /downloads

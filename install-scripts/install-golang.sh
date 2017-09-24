@@ -3,6 +3,8 @@
 # 2017.03.05
 #
 
+set -eu
+
 function installGolang {
     [ -d /downloads ] || mkdir /downloads
     cd /downloads || {

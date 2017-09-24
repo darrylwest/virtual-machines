@@ -3,6 +3,8 @@
 # 2017.09.22
 #
 
+set -eu
+
 VERS=4.2
 DIST=gradle-$VERS
 ZIP=gradle-4.2-bin.zip

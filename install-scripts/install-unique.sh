@@ -4,8 +4,11 @@
 #
 
 cd /usr/local/bin \
-    && wget https://github.com/darrylwest/go-unique/raw/master/linux/unique \
+    && wget -O unique https://github.com/darrylwest/go-unique/raw/master/linux/unique \
     && chmod a+x unique \
-    && for f in olid txid tsid; do ln -f /usr/local/bin/unique $f; done
+    && ln -f unique ulid \
+    && ln -f unique guid \
+    && ln -f unique txid \
+    && ln -f unique tsid
 
 exit 0

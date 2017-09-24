@@ -3,6 +3,8 @@
 # 2017.09.22
 #
 
+set -eu
+
 VERS=3.5.0
 DIST="apache-maven-$VERS"
 TAR="$DIST-bin.tar.gz"
