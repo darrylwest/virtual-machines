@@ -48,6 +48,7 @@ Vagrant.configure("2") do |config|
     d.pull_images "mhart/alpine-node:base-8"
     d.pull_images "lyft/envoy-alpine:latest"
     d.pull_images "openjdk:8-jre-alpine"
+    d.pull_images "darrylwest/unique-tcp:latest"
   end
 
   # Provider-specific configuration so you can fine-tune various
