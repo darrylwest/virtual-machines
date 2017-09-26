@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$instance_name = "centos7-develop"
+$instance_name = "centos7-java-dev"
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
@@ -62,7 +62,10 @@ Vagrant.configure("2") do |config|
 
     vb.name = $instance_name
   end
-  config.vm.hostname = $instance_name
+
+  config.vm.define vm_name = $instance_name do |config|
+      config.vm.hostname = vm_name
+  end
 
   #
   # View the documentation for the provider you are using for more
