@@ -10,12 +10,13 @@ The container is designed to be used for a single test then reset.  This enables
 
 ### URL Routing
 
-* envoy L7 routing
-* 
+_need to determine request patterns from client UI; single host URL? multiple?_
 
 ### HTTP Server
 
 ### Responses to known requests
+
+_the mock library has some raw responses; this is a starting point_
 
 #### Creating and Maintaining Test Data
 
@@ -30,7 +31,6 @@ The container is designed to be used for a single test then reset.  This enables
 * what is the performance when run in a VM?
 * how to allocate unique URL for each container
 * how to signal when tests are complete and reset is required
-
 
 
 ###### darryl.west | 2017.11.09
