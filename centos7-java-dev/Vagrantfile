@@ -88,6 +88,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source:"install-scripts/std-alias", destination: ".alias"
   config.vm.provision "file", source:"install-scripts/std-bashrc", destination: ".bashrc"
   config.vm.provision "file", source:"install-scripts/std-vimrc", destination: ".vimrc"
+  config.vm.provision "file", source:"install-scripts/std-devenv", destination: ".devenv"
   config.vm.provision "shell", path: "install-scripts/centos-core.sh"
   config.vm.provision "shell", path: "install-scripts/install-git.sh"
   config.vm.provision "shell", path: "install-scripts/install-nodejs.sh"
