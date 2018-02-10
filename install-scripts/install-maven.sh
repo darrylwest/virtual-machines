@@ -3,7 +3,8 @@
 # 2017.09.22
 #
 
-set -eu
+yum install maven -y
+exit 0
 
 VERS=3.5.0
 DIST="apache-maven-$VERS"

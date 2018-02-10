@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
     # the runtime node...
     d.pull_images "mhart/alpine-node:base-8"
     d.pull_images "lyft/envoy-alpine:latest"
-    d.pull_images "openjdk:8-jre-alpine"
+    # d.pull_images "openjdk:8-jre-alpine"
     d.pull_images "darrylwest/unique-tcp:latest"
   end
 
@@ -57,7 +57,7 @@ Vagrant.configure("2") do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     # Customize the amount of memory on the VM:
-    # vb.memory = "1024"
+    vb.memory = "2048"
     vb.cpus = 2
 
     vb.name = $instance_name
@@ -88,6 +88,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source:"install-scripts/std-alias", destination: ".alias"
   config.vm.provision "file", source:"install-scripts/std-bashrc", destination: ".bashrc"
   config.vm.provision "file", source:"install-scripts/std-vimrc", destination: ".vimrc"
+  config.vm.provision "file", source:"install-scripts/std-devenv", destination: ".devenv"
   config.vm.provision "shell", path: "install-scripts/centos-core.sh"
   config.vm.provision "shell", path: "install-scripts/install-git.sh"
   config.vm.provision "shell", path: "install-scripts/install-nodejs.sh"

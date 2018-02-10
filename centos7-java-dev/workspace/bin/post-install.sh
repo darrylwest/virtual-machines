@@ -3,7 +3,7 @@
 # 2017.09.22
 #
 
-# build custom docker images
+# install the maven settings...
 
 # run the startup scripts
 
