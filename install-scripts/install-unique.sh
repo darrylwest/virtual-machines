@@ -9,6 +9,8 @@ cd /usr/local/bin \
     && ln -f unique ulid \
     && ln -f unique guid \
     && ln -f unique txid \
-    && ln -f unique tsid
+    && ln -f unique tsid \
+    && ln -f unique cuid \
+    && ln -f unique xuid
 
 exit 0
