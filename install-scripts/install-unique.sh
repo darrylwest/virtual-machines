@@ -7,6 +7,7 @@ cd /usr/local/bin \
     && wget -O unique https://github.com/darrylwest/go-unique/raw/master/linux/unique \
     && chmod a+x unique \
     && ln -f unique ulid \
+    && ln -f unique uuid \
     && ln -f unique guid \
     && ln -f unique txid \
     && ln -f unique tsid \
