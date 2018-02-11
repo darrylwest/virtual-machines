@@ -12,8 +12,8 @@ function installGolang {
         exit 1
     }
 
-    vers=1.9
-    wget "https://storage.googleapis.com/golang/go${vers}.linux-amd64.tar.gz"
+    vers=1.9.4
+    wget "https://dl.google.com/go/go${vers}.linux-amd64.tar.gz"
     cd /usr/local
 
     tar -xvzf "/downloads/go${vers}.linux-amd64.tar.gz" \
