@@ -11,7 +11,7 @@ function runYum {
     yum -y update && yum -y install wget uuid git vim-enhanced.x86_64 zip unzip
     yum groupinstall "Development Tools" -y
     yum install -y epel-release
-    yum install -y gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel clang jq
+    yum install -y gettext-devel curl-devel openssl-devel perl-CPAN perl-devel zlib-devel clang jq
 }
 
 runYum

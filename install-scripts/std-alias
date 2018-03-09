@@ -10,3 +10,11 @@ alias lh='/bin/ls -lt | head -50'
 
 alias ut='exit'
 
+#################################################################################
+# git aliases
+alias gst='git status'
+alias gbr='git branch -a | head -20'
+alias gco='git checkout'
+alias gcom='git commit'
+alias gac='git add . ; git commit -v'
+

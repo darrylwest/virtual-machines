@@ -1,6 +1,7 @@
 
 JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk/
 TOMCAT_HOME=/usr/share/tomcat
+GOPATH=$HOME/.gopath
 
-export JAVA_HOME TOMCAT_HOME
+export JAVA_HOME TOMCAT_HOME GOPATH
 
