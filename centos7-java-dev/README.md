@@ -8,7 +8,6 @@ vagrant up [--provider virtualbox]
 
 ### connect to it
 vagrant ssh
-ssh dpw@192.168.33.10 or ssh dpw@centos
 
 ### stop and leave in virualBox
 vagrant halt
@@ -22,6 +21,10 @@ vagrant rsync-auto
 ### snapshot backups
 vagrant snapshot list
 
+### Create Sharable Box
+
+_Make sure the box is running first..._
+vagrant package --output automated-test-services-<vers>.box
 ## Installation Scripts
 
 _See install-scripts_
@@ -48,5 +51,5 @@ sudo yum groupinstall 'Development Tools' -y
 
 * [vagrant + docker](https://www.vagrantup.com/docs/provisioning/docker.html)
 
-###### darryl.west | 2017.09.22
+###### darryl.west | 2018.04.03
 
