@@ -1,0 +1,23 @@
+#
+# @(#)local.profile 1.6 2017.09.14
+#
+
+################################################################################
+alias hi='history'
+alias rm='/bin/rm -i'
+alias lc='ls -c'
+alias l='ls -la'
+alias ut='exit'
+alias lh='ls -lt | head -50'
+
+################################################################################
+
+# git aliases
+alias gst='git status'
+alias gbr='git branch -a'
+alias gco='git checkout'
+alias gcom='git commit'
+alias gac='git add . ; git commit -v'
+alias gpull='git pull'
+alias gpush='git push'
+
