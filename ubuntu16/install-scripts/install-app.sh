@@ -16,7 +16,7 @@ cp Gemfile /tmp/Gemfile
 sed -e 's/2.2.0/2.2.10/' /tmp/Gemfile > Gemfile
 
 echo "copy sample database..."
-cp config/database.sample.yml config/dtabase.yml
+cp config/database.sample.yml config/database.yml
 
 echo "bundle install..."
 bundle config git.allow_insecure true
