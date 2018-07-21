@@ -3,7 +3,10 @@
 # 2018.07.21
 #
 
-set -eu
+echo "\nINSTALL NODE as `whoami`"
 
-apt-get update -qq && apt-get install -y nodejs && npm install -g bower
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
+apt-get install -y nodejs
+
+npm install -g bower
 
