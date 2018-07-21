@@ -5,5 +5,5 @@
 
 set -eu
 
-apt-get update -qq && apt-get install -y nodejs
+apt-get update -qq && apt-get install -y nodejs && npm install -g bower
 
