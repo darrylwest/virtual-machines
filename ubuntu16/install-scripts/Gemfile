@@ -1,0 +1,195 @@
+source 'https://rubygems.org'
+ruby '2.2.10'
+
+gem 'rails', '4.1.8'
+# PostgreSQL
+gem 'pg'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.3'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+# AJAX file uploads with jQuery
+gem 'remotipart', '~> 1.0'
+# Wrapper for select2 js library
+gem 'select2-rails'
+# Wrapper for font-awesome js library
+gem 'font-awesome-rails'
+# A wrapper around datatable's ajax methods
+gem 'ajax-datatables-rails', '0.3.1'
+# Bower support for Rails projects.
+gem 'bower-rails'
+# Use your angular templates with rails asset pipeline
+gem 'angular-rails-templates'
+# Wrapper for React js
+# gem 'react_on_rails', '~> 6'
+# Minimal embedded v8 engine for Ruby
+gem 'mini_racer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Recursive diff, merge, and unmerge for hashes and arrays.
+gem 'easy_diff'
+# State machines for Ruby classes
+gem 'aasm', '4.10.1'
+gem 'progressive_render'
+
+# Savon is a SOAP client for the Ruby programming language.
+gem 'savon'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0',          group: :doc
+# A Ruby on Rails framework for creating elegant backends for website administration.
+gem 'activeadmin', github: 'activeadmin'
+# Gives you a form object with validations and nested setup of models.
+gem "activerecord-import", ">= 0.2.0"
+gem 'reform'
+# Direct Upload to Amazon S3 With CORS
+gem 's3_direct_upload'
+
+# Authorizations
+gem 'devise'
+gem 'devise-async'
+gem 'devise_invitable'
+gem 'devise-token_authenticatable'
+gem 'devise-i18n'
+gem 'cancancan', '~> 1.9'
+gem 'activesupport-json_encoder'
+
+# Multi-tenancy
+gem 'acts_as_tenant'
+# Decorators
+gem 'draper', '~> 1.3'
+# Pagination
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+
+gem 'sinatra', require: false
+# To avoid empty strings store on database
+gem 'nilify_blanks'
+# Country Data
+gem 'countries'
+gem 'country_select', github: 'stefanpenner/country_select'
+# importing of CSV Files as Array(s) of Hashes.
+gem 'smarter_csv'
+# A fully configurable and extendable Git hook manager.
+gem 'overcommit', require: false
+# The official AWS SDK for Ruby
+gem 'aws-sdk', '~> 2'
+# Flight is a lightweight, component-based javascript framework
+gem 'flight-for-rails', '~> 1.5.1'
+
+# API
+gem 'grape', '0.11.0'
+gem 'grape-entity', '0.4.5'
+gem 'actionpack', '4.1.8'
+
+# API testing
+gem 'airborne', '0.1.15'
+
+# File, Image processing
+gem 'paperclip'
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
+
+group :development do
+  gem 'quiet_assets'
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rubocop', require: false
+  gem 'thin'
+  gem 'git-log-time'
+  gem 'bullet'
+  gem 'rack-mini-profiler'
+end
+
+group :development, :test do
+  gem 'faker'
+  gem 'letter_opener'
+  gem 'capybara-console'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', require: false
+  gem 'capybara'
+  gem 'selenium-webdriver', '2.45.0.dev3'
+  gem 'capybara-webkit'
+  gem 'factory_girl_rails'
+  gem 'webmock', require: false
+  gem 'simplecov', require: false
+  gem 'codeclimate-test-reporter', require: nil
+  gem 'database_cleaner'
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'unicorn-worker-killer'
+  gem 'newrelic_rpm'
+end
+
+# Logging
+gem 'lograge'
+# Exception tracking
+gem 'rollbar', '~> 1.3.1'
+
+# Deployer and server automation tool.
+gem 'mina'
+gem 'mina-sidekiq', require: false
+gem 'mina-unicorn', require: false
+gem 'mina-rollbar', require: false
+gem 'mina_hipchat', require: false
+gem 'mina-multistage', require: false
+
+# Loads environment variables from .env.
+gem 'dotenv-rails'
+
+# Background processing
+gem 'sidekiq'
+gem 'sidekiq-scheduler', '~> 2.0'
+
+# Track changes to your models, for auditing or versioning.
+gem 'audited', '~> 4.3'
+gem 'public_activity', github: 'pokonski/public_activity'
+gem 'paper_trail'
+
+# for parsing excel sheets
+gem 'rubyXL'
+
+# PDF
+gem 'wicked_pdf'
+gem 'combine_pdf'
+
+# Easy Diffing in Ruby
+gem 'diffy'
+# Editor
+gem 'ckeditor', '4.1.2'
+# A Ruby wrapper for the Infusionsoft API
+gem 'infusionsoft'
+# Cocoon makes it easier to handle nested forms.
+gem 'cocoon'
+# For Amazon Web Services
+gem 'kms_attrs'
+# encrypt and decrypt attributes.
+gem 'attr_encrypted'
+# A tagging plugin for Rails applications
+gem 'acts-as-taggable-on'
+# A module for using the Twilio REST API and generating valid TwiML
+gem 'twilio-ruby', '~> 4.2.1'
+gem 'httparty', '0.14.0'
+# Wrapper for validating international telephone numbers
+gem 'intl-tel-input-rails', '8.4.9'
+gem 'cross_stream', :path => "#{File.expand_path(__FILE__)}/../vendor/gems/cross_stream-0.1.0"
+gem 'chromedriver-helper'
+gem 'rspec-retry'
+gem 'device_detector'
+gem 'rubyzip', '~> 1.1.0'
+gem 'axlsx', '2.1.0.pre'
+gem 'axlsx_rails'
+gem 'mina-slack', require: false

@@ -18,5 +18,3 @@ make
 make install
 ruby -v
 
-gem install bundler
-

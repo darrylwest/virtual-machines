@@ -4,4 +4,5 @@
 #
 
 gem install rails -v 4.1.6 --no-ri --no-rdoc
+npm install -g bower
 
