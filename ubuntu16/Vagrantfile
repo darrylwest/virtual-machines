@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "install-scripts/install-ruby.sh"
   config.vm.provision "shell", path: "install-scripts/install-rails.sh"
   config.vm.provision "shell", path: "install-scripts/install-user.sh"
-
-  # post install...
   # config.vm.provision "shell", path: "install-scripts/install-app.sh"
+  config.vm.provision "shell", path: "install-scripts/post-install.sh"
+
 end
