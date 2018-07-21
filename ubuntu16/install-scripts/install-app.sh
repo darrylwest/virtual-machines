@@ -22,3 +22,4 @@ echo "bundle install..."
 bundle config git.allow_insecure true
 bundle install
 
+rake bower:install
