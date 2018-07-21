@@ -67,8 +67,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "file", source:"install-scripts/bash_aliases", destination: ".bash_aliases"
   config.vm.provision "file", source:"install-scripts/vimrc", destination: ".vimrc"
-  config.vm.provision "shell", path: "install-scripts/install-user.sh"
   config.vm.provision "shell", path: "install-scripts/install-ruby.sh"
   config.vm.provision "shell", path: "install-scripts/install-rails.sh"
+
+  # post install...
+  # config.vm.provision "shell", path: "install-scripts/install-user.sh"
   # config.vm.provision "shell", path: "install-scripts/install-app.sh"
 end

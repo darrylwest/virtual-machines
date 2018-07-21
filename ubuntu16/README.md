@@ -4,4 +4,5 @@
 
 * includes docker
 * added .bash_aliases
+* configure scripts for ruby, rails, etc
 
