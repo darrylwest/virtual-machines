@@ -20,4 +20,6 @@ echo $blob | base64 --decode > $TARGET
 chmod 400 $TARGET
 chown vagrant:vagrant $TARGET
 
+chown -R vagrant:vagrant $HOME
+
 exit 0
