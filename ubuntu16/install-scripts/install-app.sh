@@ -5,7 +5,7 @@
 
 set -eu
 
-REPO=git@github.com:resublime/livingmatrix.git'
+REPO='git@github.com:resublime/livingmatrix.git'
 echo "clone the repo: $REPO..."
 git clone $REPO
 
