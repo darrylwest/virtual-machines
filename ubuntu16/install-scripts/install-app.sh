@@ -4,16 +4,21 @@
 #
 
 set -eu
-set -x
 
-git clone git@github.com:resublime/livingmatrix.git
+REPO=git@github.com:resublime/livingmatrix.git'
+echo "clone the repo: $REPO..."
+git clone $REPO
 
 cd livingmatrix
 
+echo "update gemfile..."
 cp Gemfile /tmp/Gemfile
 sed -e 's/2.2.0/2.2.10/' /tmp/Gemfile > Gemfile
 
+echo "copy sample database..."
+cp config/database.sample.yml config/dtabase.yml
+
+echo "bundle install..."
 bundle config git.allow_insecure true
 bundle install
 
-cp config/database.sample.yml config/dtabase.yml
