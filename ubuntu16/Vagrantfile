@@ -52,9 +52,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update -qq
     apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev libpq-dev libxml2-dev libxslt1-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
-    apt-get install -y jq unzip xvfb qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
+    apt-get install -y unzip xvfb qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
     apt-get install -y imagemagick libmagickcore-dev libmagickwand-dev
-    apt-get install -y nodejs postgresql postgresql-contrib libpq-dev
+    apt-get install -y nodejs jq 
+    apt-get install -y postgresql postgresql-contrib libpq-dev
   SHELL
 
   # install docker
