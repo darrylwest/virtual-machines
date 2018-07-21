@@ -5,7 +5,15 @@
 
 set -eu
 
-TARGET=$HOME/.ssh/id_rsa
+if [ -d /home/vagrant ]
+then
+    echo "running as `whoami`"
+else
+    echo "no user yet, try again later..."
+    exit 0
+fi
+
+TARGET=/home/vagrant/.ssh/id_rsa
 
 if [ -f $TARGET ]
 then
@@ -20,6 +28,6 @@ echo $blob | base64 --decode > $TARGET
 chmod 400 $TARGET
 chown vagrant:vagrant $TARGET
 
-chown -R vagrant:vagrant $HOME
+chown -R vagrant:vagrant /home/vagrant/
 
 exit 0
