@@ -38,9 +38,12 @@ SCRIPT
 
 Vagrant.configure("2") do |config|
   # Specify your hostname if you like
-  # config.vm.hostname = "name"
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.network "private_network", type: "dhcp"
+
+  config.vm.define vm_name = "ubuntu16-k8s"
+  config.vm.hostname = vm_name
+
   config.vm.provision "docker"
   config.vm.provision "shell", inline: $script
 end
