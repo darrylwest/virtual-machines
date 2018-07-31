@@ -6,8 +6,4 @@
 echo "Post Install..."
 
 docker -v
-node -v
-npm -v
-ruby -v
-rails -v
 
