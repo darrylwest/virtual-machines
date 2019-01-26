@@ -9,7 +9,7 @@ function installNode {
     [ -d /downloads ] || mkdir /downloads
 
     cd /downloads
-    vers=v8.9.4
+    vers=v10.15.0
     echo "install node version ${vers}..."
 
     wget "https://nodejs.org/dist/$vers/node-${vers}-linux-x64.tar.xz" \

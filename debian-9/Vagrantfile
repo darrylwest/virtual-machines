@@ -78,6 +78,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source:"install-scripts/bash_aliases", destination: ".alias"
   config.vm.provision "file", source:"install-scripts/vimrc", destination: ".vimrc"
   config.vm.provision "shell", path: "./install-scripts/install-nodejs.sh"
-  # config.vm.provision "shell", path: "./install-scripts/install-erlang.sh"
-  # config.vm.provision "shell", path: "./install-scripts/install-elixir.sh"
+  config.vm.provision "shell", path: "./install-scripts/install-elixir.sh"
 end

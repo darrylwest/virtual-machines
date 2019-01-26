@@ -3,8 +3,9 @@
 # 2019.01.25
 #
 
-host="https://packages.erlang-solutions.com/erlang/elixir/FLAVOUR_2_download"
-deb="elixir_1.8.0-1~debian~stretch_amd64.deb"
+ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
+    && dpkg -i erlang-solutions_1.0_all.deb \
+    && apt-get update -y \
+    && apt-get install esl-erlang -y \
+    && apt-get install elixir -y
 
-wget "$host/$deb"
-sudo dpkg -i $deb
