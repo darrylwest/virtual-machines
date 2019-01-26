@@ -79,4 +79,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source:"install-scripts/vimrc", destination: ".vimrc"
   config.vm.provision "shell", path: "./install-scripts/install-nodejs.sh"
   config.vm.provision "shell", path: "./install-scripts/install-elixir.sh"
+  config.vm.provision "file", source:"install-scripts/install-phoenix.sh", destination: "install-phoenix.sh"
 end
