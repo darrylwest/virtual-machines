@@ -5,5 +5,5 @@
 
 VERS=1.4.0
 
-mix local.hex --if-missing \
+mix local.hex --if-missing --force \
     && mix archive.install hex phx_new $VERS --force
