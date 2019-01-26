@@ -3,6 +3,9 @@
 # 2019.01.26
 #
 
+sudo cp /vagrant/install-scripts/motd /etc/motd
+# sudo systemctl start postgresql.service
+
 /vagrant/install-scripts/keygen-linux
 
 git clone https://github.com/esl/MongooseIM.git
@@ -12,4 +15,5 @@ git clone https://github.com/danielberkompas/cloak
 
 # copy the id_rsa first...
 git clone git@gitlab.com:SkedgeAlert/skedgealert.git
+
 
