@@ -3,6 +3,8 @@
 # 2019.01.26
 #
 
+/vagrant/install-scripts/keygen-linux
+
 git clone https://github.com/esl/MongooseIM.git
 git clone https://github.com/danielberkompas/ex_twilio.git
 git clone https://github.com/duailibe/cuid.git
