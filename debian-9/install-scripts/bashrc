@@ -13,6 +13,9 @@ fi
 # User specific aliases and functions
 set -o vi
 
+export VISUAL=vim
+export EDITOR=$VISUAL
+
 . $HOME/.alias
 [ -f $HOME/.devenv ] && . $HOME/.devenv
 
