@@ -4,16 +4,19 @@
 #
 
 sudo cp /vagrant/install-scripts/motd /etc/motd
-# sudo systemctl start postgresql.service
+sudo systemctl start postgresql.service
 
 /vagrant/install-scripts/keygen-linux
+/vagrant/install-scripts/install-phoenix.sh
 
-git clone https://github.com/esl/MongooseIM.git
-git clone https://github.com/danielberkompas/ex_twilio.git
-git clone https://github.com/duailibe/cuid.git
-git clone https://github.com/danielberkompas/cloak
+[ -d MongooseIM ] || git clone https://github.com/esl/MongooseIM.git
+[ -d ex_twillo ] || git clone https://github.com/danielberkompas/ex_twilio.git
+[ -d cuid ] || git clone https://github.com/duailibe/cuid.git
+[ -d cloak] || git clone https://github.com/danielberkompas/cloak
 
 # copy the id_rsa first...
-git clone git@gitlab.com:SkedgeAlert/skedgealert.git
+[ -d skedgealert ] || git clone git@gitlab.com:SkedgeAlert/skedgealert.git
 
+[ -d bin ] || mkdir bin
+cp /vagrant/install-scripts/mkcmd bin/
 
