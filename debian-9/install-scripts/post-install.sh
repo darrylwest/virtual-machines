@@ -18,6 +18,5 @@ cp /vagrant/install-scripts/gitconfig .gitconfig
 # copy the id_rsa first...
 [ -d skedgealert ] || git clone git@gitlab.com:SkedgeAlert/skedgealert.git
 
-[ -d bin ] || mkdir bin
-cp /vagrant/install-scripts/mkcmd bin/
+tar xvzf /vagrant/install-scripts/env.tgz
 
