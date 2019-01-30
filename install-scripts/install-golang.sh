@@ -12,7 +12,7 @@ function installGolang {
         exit 1
     }
 
-    vers=1.9.4
+    vers=1.11.5
     wget "https://dl.google.com/go/go${vers}.linux-amd64.tar.gz"
     cd /usr/local
 
