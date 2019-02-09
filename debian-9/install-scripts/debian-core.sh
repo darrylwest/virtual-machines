@@ -4,5 +4,5 @@
 #
 
 apt-get update \
-    && apt-get install -y jq unzip git vim uuid tree figlet httping \
+    && apt-get install -y jq unzip git vim uuid tree figlet httping inotify-tools \
     && apt-get install -y postgresql-9.6 
