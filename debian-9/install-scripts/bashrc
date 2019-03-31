@@ -19,3 +19,8 @@ export EDITOR=$VISUAL
 . $HOME/.alias
 [ -f $HOME/.devenv ] && . $HOME/.devenv
 
+## required for erl/elixir projects
+export ERL_COOKIE='my random 278385ac565ee7d73744322b4b52acedbe39b951c0c44481 cookie'
+export EX_COOKIE='0A71A32716815F4B4D84AED49886776D7FE5FA5A7E46A03C931AFBF873EB8A4A'
+export REPLACE_OS_VARS=true
+export NODE_NAME=pet1
